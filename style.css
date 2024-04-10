@@ -1,0 +1,140 @@
+/* body {
+    background: url('img/me.jpg') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    color:#696969;
+    
+}
+
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('img/bg5.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.division {
+    position: relative;
+    height: 5vh;
+    background-color: goldenrod;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.division2 {
+    position: relative;
+    height: 3vh;
+    background-color: goldenrod;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+p {
+    color:black;
+    line-height: 2.0;
+}
+
+
+.footer {
+ 
+  text-align: center;
+}
+
+.nav-link.hover-effect:hover {
+    color:goldenrod;
+}
+
+/*home animation*/
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .text-animation {
+        animation: slideInFromLeft 1s ease-out forwards;
+    }
+
+
+    .image-animation {
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+
+/*Content Animation*/
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+ 
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
+
+  .visible {
+    animation-name: fadeInUp;
+  }
+
+  
+@media(max-width:991px) {
+    .sidebar {
+        background-color: white;
+        backdrop-filter: blur(10px);
+    }
+}
